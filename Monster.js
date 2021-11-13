@@ -4,7 +4,7 @@ class Monster {
 		var options = { 
 			density: 5, 
 			frictionAir: 0,
-			isStatic: true
+			isStatic: false
 		};
 		this.x=x;
 		this.y=y;
@@ -16,10 +16,7 @@ class Monster {
 	}
 	display(){
 
-		if(this.body.speed > 3){
-			world.remove (world, this.body)
-		}
-		else {
+		
 			
 			var santaPos=this.body.position;		
 			push()
@@ -29,6 +26,6 @@ class Monster {
 			imageMode(CENTER);
 			image(this.image, 0,0,this.r, this.r)
 			pop()
-		}
+		
 	}
 }

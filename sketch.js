@@ -16,11 +16,11 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
 
-  ground = new Ground(600, 600, 1200, 20);
+  ground = new Ground(600, 600, 1400, 20);
 
   hero = new Hero(400,800,250);
   rope = new Rope(hero.body, { x: 500, y: 50 });
-  monster = new Monster(1100,600,300);
+  monster = new Monster(1100,550,300);
 
   box1 = new Box(600, 200, 70, 70);
   box2 = new Box(900, 200, 70, 70);
